@@ -1,0 +1,142 @@
+html {
+  min-height: 100%;
+  background-image: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+  font-family: "Kumbh Sans";
+  font-size: 12px;
+}
+h1{
+  padding: 10px;
+  font-weight: 900;
+  font-size: 30px;
+}
+hr{
+  color: hsl(240, 5%, 91%);
+}
+
+.mainbox{
+  background-color: white;
+  z-index: 1;
+  position: fixed;
+  width: 60%;
+  height: 60%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 25px;
+  overflow: hidden;
+  padding: 0
+}
+
+
+.accordion {
+  cursor: pointer;
+  padding: 16px;
+  border: none;
+  text-align: left;
+  transition: 0.4s;
+  width: 100%;
+  background-color: white;
+}
+.active {
+  font-weight: bold;
+
+}
+.accordion:hover{
+  color: hsl(14, 88%, 65%);
+}
+
+.panel {
+  padding: 0 16px;
+  display: none;
+  overflow: hidden;
+  background-color: white;
+}
+
+.faq {
+  width: 30%;
+  position: absolute;
+  z-index: 2;
+  top: 10%;
+  left: 55%;
+}
+.attribution {
+  font-size: 11px;
+  position: absolute;
+  top: 90%;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+.bg-pattern {
+  position: relative;
+  top:-110%;
+  left: -47%;
+}
+.illustration-woman{
+  position: relative;
+  top: 20%;
+  left: -5%;
+  z-index: 2;
+}
+
+.arrow {
+  float: right;
+}
+.illustration-box{
+  position: absolute;
+  top:46%;
+  left: 15%;
+  z-index: 3;
+}
+.rotate {
+  transform: rotate(180deg);
+}
+
+.bg-pattern-mobile{
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.woman-mobile{
+  position: absolute;
+  left: 50%;
+  transform: translate(-55%);
+  z-index: 3;
+  top: 3%;
+}
+
+.mobile-img{
+  display: none;
+}
+/*mobile screen*/
+
+@media screen and (max-width: 1000px) {
+  .faq{
+    width: 100%;
+    left: auto;
+  }
+  .desktop-img{
+    display: none;
+  }
+  h1 {
+    text-align: center;
+    padding-top: 20%;
+  }
+  hr {
+    width: 92%;
+  }
+  .mainbox{
+    width: 75%;
+    height: 70%;
+    position: absolute;
+    margin: auto;
+  }
+  .mobile-img{
+    display: block;
+}
